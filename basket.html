@@ -5,65 +5,73 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 	<link rel="stylesheet" type="text/css" href="style/layout.css">
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<img src="logo.png" alt="AKQA">
+	<div class="content">
+		<img src="img/logo.png" alt="AKQA">
 
-	<form>
-		<h1>Your Basket</h1>
-		<p class="description">Droid Serif Items you have added to your basked are shown below.</p>
-		<p class="description">Droid Serif Adjust the quantities or remove items before continuing your purchase.</p>
+		<form>
+			<h1>Your Basket</h1>
+			<p class="description">Droid Serif Items you have added to your basked are shown below.</p>
+			<p class="description">Droid Serif Adjust the quantities or remove items before continuing your purchase.</p>
 
-		<div>
-			<div>Product</div>
-			<div>Price</div>
-			<div>Qty</div>
-			<div>Cost</div>
-		</div>
-
-		<div class="product">
-			<span class="name">Cotton T-Shirt, Medium</span>
-			<span class="price">£1.99</span>
-			<input type="number" value="1">
-			<span class="price">£1.99</span>
-			<button class="remove"></button>
-		</div>
-
-		<div class="product">
-			<span class="name">Baseball Cap, One Size</span>
-			<span class="price">£2.99</span>
-			<input type="number" value="2">
-			<span class="price">£5.98</span>
-			<button class="remove"></button>
-		</div>
-
-		<div class="product">
-			<span class="name">Swim Shorts, Medium</span>
-			<span class="price">£3.99</span>
-			<input type="number" value="1">
-			<span class="price">£3.99</span>
-			<button class="remove"></button>
-		</div>
-
-		<div class="summary">
-			<div class="subtotal">
-				<span class="name">Subtotal</span>
-				<span class="value">£11.96</span>
-			<div class="vat">
-				<span class="name">VAT @ 20%</span>
-				<span class="value">£2.39</span>
+			<div class="product-header">
+				<span class="name">Product</span>
+				<span class="price">Price</span>
+				<span class="qty">Qty</span>
+				<span class="price">Cost</span>
 			</div>
-			<div class="total">
-				<span class="name">Total</span>
-				<span class="value">£14.35</span>
-			</div>
-		</div>
 
-		<button type="submit">BuyNow»</button>
-	</form>	
+			<div class="product">
+				<span class="name">Cotton T-Shirt, Medium</span>
+				<span class="price">£1.99</span>
+				<span class="qty"><input type="number" value="1"></span>
+				<span class="price">£1.99</span>
+				<span class="action"><button class="remove"></button></span>
+			</div>
+
+			<div class="product">
+				<span class="name">Baseball Cap, One Size</span>
+				<span class="price">£2.99</span>
+				<span class="qty"><input type="number" value="2"></span>
+				<span class="price">£5.98</span>
+				<span class="action"><button class="remove"></button></span>
+			</div>
+
+			<div class="product">
+				<span class="name">Swim Shorts, Medium</span>
+				<span class="price">£3.99</span>
+				<span class="qty"><input type="number" value="1"></span>
+				<span class="price">£3.99</span>
+				<span class="action"><button class="remove"></button></span>
+			</div>
+
+			<div class="summary">
+				<div class="subtotal">
+					<span class="name">Subtotal</span>
+					<span class="value">£11.96</span>
+				</div>
+				<div class="vat">
+					<span class="name">VAT @ 20%</span>
+					<span class="value">£2.39</span>
+				</div>
+				<div class="total">
+					<span class="name">Total</span>
+					<span class="value">£14.35</span>
+				</div>
+
+				<button type="submit">BuyNow</button>
+			</div>
+
+			
+		</form>
+	</div>
 
 	<div class="footer">
-		© <span class="company-name">2013 AKQA Ltd.</span> Registered in England: 2964394
+		<div class="content">
+			© <span class="company-name">2013 AKQA Ltd.</span> Registered in England: 2964394
+		</div>
 	</div>
 </body>
 </html>
