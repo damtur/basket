@@ -9,6 +9,11 @@ html {
 	font-family: 'Droid Sans', sans-serif;
 }
 
+/* For old browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+	display: block;
+}
+
 body {
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top, #ffffff 0%, #d9d9d9 100%); /* FF3.6+ */
@@ -30,12 +35,26 @@ body {
 }
 
 body > .content {
-	padding-top: 10ex;
+	padding-top: 2ex;
 	padding-bottom: 6ex;
 }
 
+@media (min-width: 500px) {
+	body > .content {
+		padding-top: 10ex;
+	}
+}
+
+@media (min-width: 750px) {
+	.content {
+		max-width: 600px;
+	}
+}
+
+
+
 /* Footer */
-.footer {
+footer {
 	position: fixed;
 	bottom: 0;
 	height: 6ex;

@@ -10,6 +10,7 @@ var products = {};
 $(document).ready(function() {
 	initModel();
 	$("input[type='number']").on("change keyup input", updatePrice);
+	$("button.remove").on("click", removeProduct);
 
 	$('form').submit(processSubmit);
 });
@@ -23,6 +24,16 @@ function initModel() {
 		product.qty = $(this).find("[name='qty']").val();
 		products[product.id] = product;
 	});
+}
+
+function removeProduct() {
+	var button = $(this);
+	var productContainer = button.parents('.product');
+	var productId = productContainer.find("[name='productId']").val();
+
+	delete products[productId];
+	productContainer.remove();
+	render();
 }
 
 function updatePrice() {
