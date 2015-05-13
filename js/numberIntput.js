@@ -18,7 +18,9 @@ function updateNumberInput(input) {
 		.append(plusButton)
 		.append(minusButton);
 
-	$(input).after(buttonContainer);
+	$(input)
+		.addClass('styled')
+		.after(buttonContainer);
 }
 
 

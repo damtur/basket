@@ -1,15 +1,12 @@
 /* Number spinners */
-input[type=number] {
-	border: 1px solid #999;
-	height: 3ex;
-	display: inline-block;
-	vertical-align: middle;
+input[type=number].styled::-webkit-inner-spin-button, 
+input[type=number].styled::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+	margin: 0;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type=number].styled {
+	-moz-appearance: textfield;
 }
 
 .number-input-buttons {

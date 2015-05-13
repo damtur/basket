@@ -212,3 +212,10 @@ button[type="submit"]:disabled {
 	background: #333;
 	cursor: auto;
 }
+
+input[type=number] {
+	border: 1px solid #999;
+	height: 3ex;
+	display: inline-block;
+	vertical-align: middle;
+}
