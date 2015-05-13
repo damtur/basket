@@ -57,6 +57,10 @@ function checkPrice(input) {
 	if (!isNatural(input.val())) {
 		input.val("");
 	}
+
+	if (input.val() > 10) {
+		input.val(10);
+	}
 }
 
 // For now it re-render all products, followed up with re-computation of total price
@@ -79,7 +83,8 @@ function render() {
 }
 
 function formatPrice(val) {
-	return "£" + val/100;
+	var strVal = String(val);
+	return "£" + (strVal.substring(0, strVal.length - 2) || 0) + "." + strVal.substring(strVal.length - 2);
 }
 
 function processSubmit(event) {
