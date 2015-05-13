@@ -205,5 +205,10 @@ button[type="submit"]:after {
 }
 
 button[type="submit"]:hover {
-	background: #3333ff
+	background: #3333ff;
+}
+
+button[type="submit"]:disabled {
+	background: #333;
+	cursor: auto;
 }

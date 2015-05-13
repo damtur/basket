@@ -1,0 +1,31 @@
+/* Number spinners */
+input[type=number] {
+	border: 1px solid #999;
+	height: 3ex;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.number-input-buttons {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.number-input-buttons button {
+	display: block;
+	background: #999;
+	font-size: 70%;
+	color: white;
+	border: none;
+	width: 1.5em;
+	margin: 1px;
+	height: 2ex;
+	line-height: 2ex;
+	cursor: pointer;
+}

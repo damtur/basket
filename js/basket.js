@@ -50,7 +50,7 @@ function updatePrice() {
 }
 
 function isNatural(val) {
-	return (val^0) == Number(val) && val > 0;
+	return (val^0) == Number(val) && val >= 0;
 }
 
 function checkPrice(input) {
@@ -80,6 +80,12 @@ function render() {
 	$(".summary .subtotal .value").html(formatPrice(subtotal));
 	$(".summary .vat .value").html(formatPrice(vat));
 	$(".summary .total .value").html(formatPrice(totalValue));
+
+	if (totalValue > 0) {
+		$("button[type='submit']").removeAttr('disabled');
+	} else {
+		$("button[type='submit']").attr('disabled','disabled');
+	}
 }
 
 function formatPrice(val) {
